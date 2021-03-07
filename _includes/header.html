@@ -1,0 +1,44 @@
+<header class="HipHop" role="banner">
+
+  <nav class="Navigation" role="navigation">
+    {% if page.url != "/" %}<a href="/" class="Navigation-link">Home</a>{% endif %}
+    <a href="/mission" class="Navigation-link">Mission</a>
+    {% if page.title != "KUDOS FOR SUBSCRIBING" %}<a href="#newsletter" class="Navigation-link">Newsletter</a>{% endif %}
+    <a href="https://twitter.com/fakednostalgia" target="_blank" class="Navigation-link">Twitter</a>
+    <a href="/feed.xml" target="_blank" class="Navigation-link">Rss</a>
+  </nav>
+
+  {% if page.title == "MISSION" %}
+  <section class="HipHop-nas">
+    <p class="HipHop-nasVerse">THE FAKE NOSTALGIA seeks to explore and somewhat archive beautiful web design pieces found within earlier internet culture. Has web design lost it's soul? We haven't decided yet, but we're leaning towards the answer 'Yes'. For this very reason we want to look back and see where current web design came from. Let's blow some dust off the faded screens and get inspired.</p>
+
+    <p class="HipHop-nasVerse">Project is only possible because of <a href="https://archive.org/" target="_blank">Internet Archive</a>. Support them in any way you can. They are working on some awesome shit.</p>
+  </section>
+  {% endif %}
+
+  {% if page.title == "KUDOS FOR SUBSCRIBING" %}
+  <section class="HipHop-nas">
+    <p class="HipHop-nasVerse">Kudos for signing up to the newsletter! Just one more thing, you’ll need to click the link in the email we just sent you. Then you'll be fully on board.</p>
+
+    <p class="HipHop-nasVerse">* The first issue will go out after we collect a sufficient amount of subscribers.<span>Thanks</span></p>
+
+    {% comment %}
+    <p class="HipHop-nasVerse">You can unsubscribe anytime from a link in the newsletter itself.</p>
+    {% endcomment %}
+  </section>
+  {% endif %}
+
+  <section class="HipHop-biggie  {% if page.path contains '_posts' %}HipHop-biggie--postView{% endif %}{% if page.title == "MISSION" %}HipHop-biggie--missionView{% endif %}{% if page.title == "KUDOS FOR SUBSCRIBING" %}HipHop-biggie--subView{% endif %}">
+    <h1 class="HipHop-biggieTitle">The Fake Nostalgia</h1>
+  </section>
+
+  <!-- Subrosa -->
+  <div class="Subrosa">
+    <img class="Subrosa-rosa" src="/vectors/ROSA.svg" alt="">
+    <img class="Subrosa-rosa" src="/vectors/ROSA.svg" alt="">
+    <img class="Subrosa-rosa" src="/vectors/SKULL-WITH-CROWN.svg" alt="">
+    <img class="Subrosa-rosa" src="/vectors/ROSA.svg" alt="">
+    <img class="Subrosa-rosa" src="/vectors/ROSA.svg" alt="">
+  </div>
+
+</header>

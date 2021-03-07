@@ -1,0 +1,71 @@
+.Subrosa {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+
+  width: 100%;
+  @include fluid-units(height, 320px, 1366px, 88px, 188px);
+
+  pointer-events: none;
+}
+
+  .Subrosa-rosa {
+    display: block;
+
+    @include fluid-units(height, 320px, 1366px, 144px, 288px);
+
+    z-index: 999;
+
+    &:nth-of-type(1) {
+      @include fluid-units(height, 320px, 1366px, 111px, 222px);
+
+      transform: translate(20%, -5%) rotate(5deg);
+    }
+
+    &:nth-of-type(2) {
+      @include fluid-units(height, 320px, 1366px, 133px, 255px);
+
+      transform: translate(7.5%, -10%) rotate(-5deg);
+    }
+
+    &:nth-of-type(3) {
+      @include fluid-units(height, 320px, 1366px, 155px, 299px);
+
+      transform: translateY(-20%);
+    }
+
+    &:nth-of-type(4) {
+      @include fluid-units(height, 320px, 1366px, 133px, 244px);
+
+      transform: translate(-15%, -7.5%) rotate(5deg);;
+    }
+
+    &:nth-of-type(5) {
+      @include fluid-units(height, 320px, 1366px, 111px, 222px);
+
+      transform: translate(-25%, -5%) rotate(-15deg);;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

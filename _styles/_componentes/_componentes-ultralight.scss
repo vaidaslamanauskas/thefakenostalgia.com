@@ -1,0 +1,60 @@
+.UltralightBeam {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+
+  padding-top: 14.4444vmin;
+  padding-bottom: 14.4444vmin;
+  padding-right: 2.2222vw;
+  padding-left: 2.2222vw;
+
+  width: 100%;
+
+  background: lighten(black, 6%);
+}
+
+  .UltralightBeam-verse {
+    display: block;
+
+    font-family: 'Futura', sans-serif;
+    font-size: calc(16px + .125vw);
+    line-height: 1;
+    text-decoration: none;
+    color: white;
+
+    border-bottom: 2px solid rgba(255, 255, 255, .27);
+
+    &:focus,
+    &:hover {
+      text-decoration: none;
+      border-bottom-color: rgba(255, 255, 255, .42);
+    }
+
+    &:active {
+      transform: translateY(1px);
+    }
+  }
+
+  .UltralightBeam-hook {
+    display: block;
+
+    font-family: 'Futura', sans-serif;
+    font-size: calc(16px + .125vw);
+    line-height: 1;
+    color: rgba(255, 255, 255, .47);
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+{% if page.title != "KUDOS FOR SUBSCRIBING" %}
+<footer id="newsletter" class="Newsletter">
+
+  <h2 class="Newsletter-rad  {% if page.path contains '_posts' %}Newsletter-rad--postView{% endif %}">The Great Newsletter</h2>
+
+  <form action="//thefakenostalgia.us14.list-manage.com/subscribe/post?u=f4a8b51baf0ac795f2c352dcb&amp;id=4bd8ebc42c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="Newsletter-form" target="_blank" novalidate>
+    <label for="mce-EMAIL" class="Newsletter-formScreenReaders">Email Address</label>
+    <input type="email" name="EMAIL" id="mce-EMAIL" class="required email mailchimp-email-input" placeholder="email@domain.com" required>
+    <input type="submit" name="Subscribe" value="Subscribe" id="mc-embedded-subscribe">
+  </form>
+
+</footer>
+{% endif %}

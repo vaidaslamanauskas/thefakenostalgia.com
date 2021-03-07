@@ -1,0 +1,221 @@
+.Hypercar {
+  position: relative;
+
+  width: 100%;
+  overflow: hidden;
+}
+
+  .Hypercar-ferrari {
+    background-image: url(../vectors/DOT.svg);
+    background-size: 24px;
+  }
+
+    .Hypercar-ferrariF40 {
+      display: block;
+
+      max-height: 90vh;
+
+      transition: all .25s ease;
+    }
+
+  .Hypercar-pagani {
+    position: relative;
+    display: block;
+
+    @media (min-width: 600px) {
+      position: absolute;
+
+      left: 4.4444vmin;
+      bottom: 4.4444vmin;
+
+      border: 2px solid #f4edd2;
+      border-radius: 100%;
+    }
+  }
+
+    .Hypercar-paganiZonda {
+      position: relative;
+      display: block;
+
+      width: 57px;
+      height: 57px;
+
+      cursor: pointer;
+
+      background-color: black;
+
+      border: 0;
+      border-radius: 100%;
+      box-shadow: none;
+
+      outline: none;
+
+      z-index: 999;
+
+      &Cinque {
+        position: absolute;
+        display: block;
+
+        top: 12px;
+        left: 24px;
+
+        width: 9px;
+        height: 9px;
+      }
+
+      &Revolucion {
+        position: absolute;
+        display: block;
+
+        left: 21px;
+        bottom: 13px;
+
+        width: 16px;
+        height: 20px;
+      }
+
+      &:hover .Hypercar-paganiZondaCinque {
+        animation-name: puntoBounce;
+        animation-duration: 1.25s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        transform-origin: center bottom;
+      }
+
+      &:focus,
+      &:hover {
+        /*background-image: linear-gradient(
+          red,
+          orange
+        );*/
+        background: #dc1921;
+      }
+    }
+
+    @keyframes puntoBounce {
+
+      from, 20%, 53%, 80%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transform: translate3d(0, 3px, 0);
+      }
+
+      40%, 43% {
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -24px, 0);
+      }
+
+      70% {
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -12px, 0);
+      }
+
+      90% {
+        transform: translate3d(0,-4px,0);
+      }
+
+    }
+
+    .Hypercar-paganiHuayra {
+      position: relative;
+      display: block;
+
+      width: 100%;
+      height: 0;
+
+      transition: all .25s ease;
+
+      will-change: transform;
+      z-index: -9;
+
+      @media (min-width: 600px) {
+        position: absolute;
+
+        left: 0;
+        bottom: 87px;
+
+        width: 360px;
+        height: auto;
+
+        background: #ed1b24;
+        border-style: solid;
+        border-color: black;
+        border-width: 5px 3px 3px 5px;
+        border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
+
+        transform: translateY(10%);
+        opacity: 0;
+      }
+
+      // Triangle
+      &:before {
+        content: '';
+        position: absolute;
+        display: block;
+
+        left: 24px;
+        bottom: -20px;
+
+        width: 0;
+        height: 0;
+
+        border-width: 10px;
+        border-style: solid;
+        border-top-color: #ed1b24;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        border-left-color: transparent;
+
+        transform: translateX(-50%);
+        z-index: 99;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+
+        left: 25px;
+        bottom: -26px;
+
+        width: 0;
+        height: 0;
+
+        border-width: 13px;
+        border-style: solid;
+        border-top-color: black;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        border-left-color: transparent;
+
+        transform: translateX(-50%);
+        z-index: 9;
+      }
+    }
+
+    .Hypercar-paganiHuayra.is-doorsUp {
+      height: auto;
+      z-index: 999;
+
+      @media (min-width: 600px) {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,255 @@
+.Horiyoshi {
+  position: relative;
+  display: block;
+
+  padding-top: 4.4444vmin;
+  padding-right: 2.2222vmax;
+  padding-left: 2.2222vmax;
+
+  column-count: auto;
+  column-width: 440px;
+  column-gap: 4.4444vmin;
+
+  background: #040004;
+}
+
+.Horiyoshi--postView {
+  -webkit-column-count: 2!important;
+     -moz-column-count: 2!important;
+          column-count: 2!important;
+
+  border-top: 6px solid #63999b;
+}
+
+  .Horiyoshi-III {
+    position: relative;
+    display: inline-block;
+
+    margin-bottom: 4.4444vmin;
+
+    width: 100%;
+
+    @media (max-width: 600px) {
+      margin-bottom: 0;
+
+      &+.Horiyoshi-III {
+        margin-top: -10%;
+        box-shadow: 0 -15px 100px rgba(0, 0, 0, .97);
+      }
+
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      padding-top: 100%;
+    }
+  }
+
+  .Horiyoshi-III--postView {
+    display: block!important;
+  }
+
+  .Horiyoshi-III--empty {
+    border: 4px dashed #fbefb3;
+  }
+
+    .Horiyoshi-horimono {
+      position: absolute;
+      display: block;
+
+      top: 0;
+      left: 0;
+
+      padding: 10px;
+
+      font-family: 'Futura';
+      font-size: 13px;
+      font-style: italic;
+      line-height: normal;
+      letter-spacing: .85px;
+      text-transform: uppercase;
+      color: #fafafa;
+
+      background: #63999b;
+      backface-visibility: hidden;
+      z-index: 9;
+
+      @media (min-width: 600px) {
+        top: 4.5%;
+        left: -1%;
+        padding: 12px;
+
+        font-size: 16px;
+      }
+    }
+
+    .Horiyoshi-irezumi {
+      position: absolute;
+      display: block;
+
+      top: 0;
+      right: 0;
+
+      padding: 8px;
+
+      font-family: 'Futura';
+      font-size: 12px;
+      font-style: italic;
+      line-height: normal;
+      text-transform: uppercase;
+      color: #fafafa;
+
+      background: #dc1921;
+      backface-visibility: hidden;
+      z-index: 9;
+
+      @media (min-width: 600px) {
+        top: 5%;
+        right: -1%;
+        padding: 8px;
+
+        font-size: 14px;
+      }
+    }
+
+    .Horiyoshi-IV {
+      position: absolute;
+      display: block;
+
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      cursor: pointer;
+
+      background: radial-gradient(
+        rgba(255, 255, 255, .15) 15%,
+        transparent 15%
+      );
+      background-size: 15px 15px;
+      border: 4px solid #fbefb3;
+
+      &:hover {
+        //animation: backgroundDrive 25s infinite linear;
+      }
+
+      &:hover .Horiyoshi-V {
+
+        &:nth-of-type(1) {
+          transform: translate(-65%, -60%);
+          z-index: 999;
+        }
+
+        &:nth-of-type(2) {
+          transform: translate(-90%, -40%);
+          z-index: 9999;
+        }
+
+        &:nth-of-type(3) {
+          transform: translate(-30%, -22.5%);
+          z-index: 99;
+        }
+
+        &:nth-of-type(4) {
+          transform: translate(-15%, -75%) rotate(-60deg);;
+          z-index: 9;
+        }
+
+      }
+    }
+
+    @keyframes backgroundDrive {
+      0% {
+        background-position: 0px 0px;
+      }
+
+      100% {
+        background-position: 100% 100%;
+      }
+    }
+
+      .Horiyoshi-V {
+        position: absolute;
+        display: block;
+
+        top: 50%;
+        left: 50%;
+
+        border: 2px solid black;
+        transition: all .25s ease;
+
+        // Some kind of bug fix
+        -webkit-backface-visibility: hidden;
+
+        &:nth-of-type(1) {
+          transform: translate(-60%, -55%);
+          z-index: 9999;
+        }
+
+        &:nth-of-type(2) {
+          transform: translate(-75%, -45%);
+          z-index: 99;
+        }
+
+        &:nth-of-type(3) {
+          transform: translate(-35%, -32.5%);
+          z-index: 999;
+        }
+
+        &:nth-of-type(4) {
+          transform: translate(-35%, -32.5%);
+          z-index: 9;
+        }
+      }
+
+        .Horiyoshi-VI {
+          display: block;
+          width: auto;
+          max-width: 100%;
+          height: auto;
+        }
+
+        /*.Horiyoshi-V img {
+          display: block;
+          width: auto;
+          max-width: 100%;
+          height: auto;
+        }*/
+
+      .Horiyoshi-VROSA {
+        border: 0;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

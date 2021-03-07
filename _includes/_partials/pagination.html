@@ -1,0 +1,35 @@
+{% if paginator.total_pages > 1 %}
+<nav class="UltralightBeam" role="navigation">
+
+  {% if paginator.previous_page %}
+  <a class="UltralightBeam-verse" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+
+  {% else %}
+
+  <span class="UltralightBeam-hook">&laquo; Previous page</span>
+  {% endif %}
+
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+
+    <span class="UltralightBeam-hook">{{ page }}</span>
+
+    {% elsif page == 1 %}
+    <a class="UltralightBeam-verse" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+
+    {% else %}
+
+    <a class="UltralightBeam-verse" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}/#main">{{ page }}</a>
+    {% endif %}
+  {% endfor %}
+
+  {% if paginator.next_page %}
+  <a class="UltralightBeam-verse" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}/#main">Next page &raquo;</a>
+
+  {% else %}
+
+  <span class="UltralightBeam-hook">Next &raquo;</span>
+  {% endif %}
+
+</nav>
+{% endif %}

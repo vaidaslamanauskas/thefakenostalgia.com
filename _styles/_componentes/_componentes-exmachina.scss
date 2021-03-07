@@ -1,0 +1,239 @@
+.ExMachina {
+  position: relative;
+  display: block;
+
+  padding: 2.2222vmin;
+
+  width: 100%;
+
+  background: #ed1b24;
+  border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
+}
+
+  .ExMachina-turingTest {
+    position: relative;
+    display: block;
+
+    margin-bottom: 4.4444vh;
+
+    padding-top: 3.3333vh;
+    padding-bottom: 3.3333vh;
+    padding-right: 3.3333vmin;
+    padding-left: 3.3333vmin;
+
+    border: 2px dashed #f4edd2;
+
+    transform: rotate(-1deg);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+    .ExMachina-turingTestFailed {
+      position: absolute;
+      display: inline-block;
+
+      top: 0;
+      left: 50%;
+
+      width: 60%;
+
+      font-family: 'Futura', sans-serif;
+      font-size: 12px;
+      line-height: 1;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-align: center;
+      color: black;
+
+      background-color: #ed1b24;
+
+      transform: translate(-50%, -50%);
+
+      @media (min-width: 800px) {
+        font-size: 14px;
+      }
+    }
+
+    .ExMachina-turingTestPassed {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      font-size: 18px;
+      line-height: 1;
+      letter-spacing: .725px;
+      text-transform: uppercase;
+      color: #f4edd2;
+
+      span {
+
+        > span {
+          display: block;
+          font-size: 65%;
+        }
+      }
+
+      > a {
+        text-decoration: none;
+        color: inherit;
+
+        border-bottom: 2px solid rgba(#f4edd2, .67);
+
+        &:focus,
+        &:hover {
+          border-bottom-color: rgba(#f4edd2, .87);
+        }
+
+        &:active {
+          transform: translateY(1px);
+        }
+      }
+    }
+
+  .ExMachina-aI {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+
+    transform: rotate(-1deg);
+  }
+
+    .ExMachina-aITwitter {
+      display: block;
+
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-right: 10px;
+      padding-left: 10px;
+
+      overflow: visible;
+
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 1;
+      letter-spacing: .75px;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      color: #f1f1f1;
+
+      cursor: pointer;
+
+      //background: darken(#1da1f2, 7.5%);
+      background: #3a7d8c;
+      border: 1px solid black;
+      border-radius: 2px;
+
+      &:focus,
+      &:hover {
+        background: darken(#3a7d8c, 1.5%);
+      }
+
+      &:active {
+        transform: translateY(1px);
+      }
+    }
+
+    .ExMachina-aIPresent {
+      display: block;
+
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-right: 10px;
+      padding-left: 10px;
+
+      overflow: visible;
+
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 1;
+      letter-spacing: .75px;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      color: #f1f1f1;
+
+      cursor: pointer;
+
+      background: #00314f;
+      border: 1px solid black;
+      border-radius: 2px;
+
+      &--false {
+        pointer-events: none!important;
+        cursor: not-allowed!important;
+        opacity: 0.5!important;
+      }
+
+      &:focus,
+      &:hover {
+        background: darken(#00314f, 1.5%);
+      }
+
+      &:active {
+        transform: translateY(1px);
+      }
+    }
+
+    .ExMachina-aIWebArchive {
+      display: block;
+
+      padding-top: 12px;
+      padding-bottom: 12px;
+      padding-right: 10px;
+      padding-left: 10px;
+
+      overflow: visible;
+
+      font-size: 13px;
+      font-weight: bold;
+      line-height: 1;
+      letter-spacing: .75px;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      color: #f1f1f1;
+
+      cursor: pointer;
+
+      background: #00314f;
+      border: 1px solid black;
+      border-radius: 2px;
+
+      &:focus,
+      &:hover {
+        background: darken(#00314f, 1.5%);
+      }
+
+      &:active {
+        transform: translateY(1px);
+      }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

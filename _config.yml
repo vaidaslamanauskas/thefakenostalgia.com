@@ -1,0 +1,47 @@
+#                                                    .
+#                                          oec :    @88>
+#                    u.      u.    u.     @88888    %8P
+#         .    ...ue888b   x@88k u@88c.   8"*88%     .         uL
+#    .udR88N   888R Y888r ^"8888""8888"   8b.      .@88u   .ue888Nc..
+#   <888'888k  888R I888>   8888  888R   u888888> ''888E` d88E`"888E`
+#   9888 'Y"   888R I888>   8888  888R    8888R     888E  888E  888E
+#   9888       888R I888>   8888  888R    8888P     888E  888E  888E
+#   9888      u8888cJ888    8888  888R    *888>     888E  888E  888E
+#   ?8888u../  "*888*P"    "*88*" 8888"   4888      888&  888& .888E
+#    "8888P'     'Y"         ""   'Y"     '888      R888" *888" 888&
+#      "P'                                 88R       ""    `"   "888E
+#                                          88>            .dWi   `88E
+#                                          48             4888~  J8%
+#                                          '8              ^"===*"`
+title: THE FAKE NOSTALGIA
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://thefakenostalgia.com" # the base hostname & protocol for your site, e.g. http://example.com
+enforce_ssl: thefakenostalgia.com # ssl
+
+# Build settings
+markdown: kramdown
+future: true
+
+permalink: /:year/:month/:day/:title/
+
+# Needs old syntax for number paths, fuck do I know
+paginate: 12
+paginate_path: "/page/:num/"
+
+# Gems
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - node_modules
+  - gulpfile.js

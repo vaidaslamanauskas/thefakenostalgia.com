@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  {% include head.html %}
+  <body>
+    {% include header.html %}
+
+    <main id="main" class="Main" role="main">
+      {{ content }}
+    </main>
+
+    {% include _partials/newsletter.html %}
+
+    {% include footer.html %}
+
+    <script src="/scripts/flickity.js"></script>
+
+    {% if page.path contains '_posts' %}
+    {% else %}
+    <script src="/scripts/lazyload.js"></script>
+    {% endif %}
+
+    {% if page.path contains '_posts' %}
+    <script>
+      {% include _scripts/toggle.js %}
+    </script>
+    {% endif %}
+    <script>
+      {% include _scripts/analytics.js %}
+    </script>
+  </body>
+</html>

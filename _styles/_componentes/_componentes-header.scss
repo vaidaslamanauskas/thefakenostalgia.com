@@ -1,0 +1,52 @@
+.Header {}
+
+  .Header-skull {
+    position: absolute;
+    display: none;
+
+    top: 0;
+    right: 6.6666vw;
+
+    width: 12.2222vmin;
+    height: 12.2222vmin;
+
+    background: white;
+
+    cursor: pointer;
+    z-index: 9;
+
+    &:after {
+      content: '';
+      position: absolute;
+      display: block;
+
+      top: 100%;
+      left: 0;
+
+      width: 100%;
+      height: 20px;
+
+      background: url(../vectors/RIP.svg) bottom left;
+    }
+
+    > img {
+      display: block;
+
+      padding: 2.2222vmin;
+
+      transform: rotate(-6deg);
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+

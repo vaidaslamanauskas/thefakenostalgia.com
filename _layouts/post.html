@@ -1,0 +1,150 @@
+---
+layout: default
+---
+
+<article class="Hypercar">
+
+  <section {% if page.exhibitBackground %} style="background-color: {{ page.exhibitBackground }}" {% endif %} class="Hypercar-ferrari" data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": false, "freeScroll": true, "prevNextButtons": false, "pageDots": false, "contain": true }'>
+
+    {% if page.exhibitOne %}<img src="{{ page.exhibitOne }}" class="Hypercar-ferrariF40" alt="">{% endif %}
+    {% if page.exhibitTwo %}<img src="{{ page.exhibitTwo }}" class="Hypercar-ferrariF40" alt="">{% endif %}
+    {% if page.exhibitThree %}<img src="{{ page.exhibitThree }}" class="Hypercar-ferrariF40" alt="">{% endif %}
+    {% if page.exhibitFour %}<img src="{{ page.exhibitFour }}" class="Hypercar-ferrariF40" alt="">{% endif %}
+    {% if page.exhibitFive %}<img src="{{ page.exhibitFive }}" class="Hypercar-ferrariF40" alt="">{% endif %}
+    {% if page.exhibitSix %}<img src="{{ page.exhibitSix }}" class="Hypercar-ferrariF40" alt="">{% endif %}
+
+  </section>
+
+  <div class="Hypercar-pagani">
+
+    <!-- Toggle button -->
+    <button class="Hypercar-paganiZonda" data-toggle>
+      <img class="Hypercar-paganiZondaCinque" src="/vectors/PUNTO.svg">
+      <img class="Hypercar-paganiZondaRevolucion" src="/vectors/LETTER.svg">
+    </button>
+
+    <div class="Hypercar-paganiHuayra">
+      <div class="ExMachina">
+
+        <section class="ExMachina-turingTest">
+          <h4 class="ExMachina-turingTestFailed">Website Title</h4>
+          <h3 class="ExMachina-turingTestPassed">{{ page.title }}</h3>
+        </section>
+
+        <section class="ExMachina-turingTest">
+          <h4 class="ExMachina-turingTestFailed">Time Period</h4>
+          <h3 class="ExMachina-turingTestPassed">
+            <span>{{ page.boneWarsFrom }}</span>
+            ---
+            <span>{{ page.boneWarsTo }}</span>
+          </h3>
+        </section>
+
+        <section class="ExMachina-turingTest">
+          <h4 class="ExMachina-turingTestFailed">Discovered by</h4>
+          <h3 class="ExMachina-turingTestPassed">
+            <a href="https://twitter.com/{{ page.fieldPaleontologist }}" target="_blank">@{{ page.fieldPaleontologist }}</a>
+          </h3>
+        </section>
+
+        <nav class="ExMachina-aI">
+          <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via=fakednostalgia" target="_blank" class="ExMachina-aITwitter">Tweet</a>
+
+          <a href="{% if page.presentDay == false %}/{% else %}{{ page.presentDay }}{% endif %}" target="_blank" class="ExMachina-aIPresent{% if page.presentDay == false %} ExMachina-aIPresent--false{% endif %}">Present-day</a>
+
+          <a href="{{ page.webArchive }}" target="_blank" class="ExMachina-aIWebArchive">Web Archive</a>
+        </nav>
+
+      </div>
+    </div>
+
+  </div>
+
+</article>
+
+
+
+<section class="Horiyoshi  Horiyoshi--postView">
+
+  {% if page.previous.url %}
+  <article class="Horiyoshi-III  Horiyoshi-III--postView">
+
+    <h5 class="Horiyoshi-horimono">&laquo; Older post</h5>
+
+    <time class="Horiyoshi-irezumi" datetime="{{ page.previous.date | date: "%F" }}">{{ page.previous.date | date: "%b %-d" }}</time>
+
+    <a href="{{ page.previous.url }}/#main" class="Horiyoshi-IV" {% if page.previous.exhibitBackground %} style="background-color: {{ page.previous.exhibitBackground }}" {% endif %}>
+
+      {% if page.previous.fossilOne %}
+      <section class="Horiyoshi-V"{% if page.previous.exhibitBackground == "#000" %} style="border-color: grey"{% endif %}>
+        <img src="{{ page.previous.fossilOne }}" class="Horiyoshi-VI" alt="{{ page.previous.title }}'s website screenshot">
+      </section>
+      {% endif %}
+
+      {% if page.previous.fossilTwo %}
+      <section class="Horiyoshi-V"{% if page.previous.exhibitBackground == "#000" %} style="border-color: grey"{% endif %}>
+        <img src="{{ page.previous.fossilTwo }}" class="Horiyoshi-VI" alt="{{ page.previous.title }}'s website screenshot">
+      </section>
+      {% endif %}
+
+      {% if page.previous.fossilThree %}
+      <section class="Horiyoshi-V"{% if page.previous.exhibitBackground == "#000" %} style="border-color: grey"{% endif %}>
+        <img src="{{ page.previous.fossilThree }}" class="Horiyoshi-VI" alt="{{ page.previous.title }}'s website screenshot">
+      </section>
+      {% endif %}
+
+      <section class="Horiyoshi-V  Horiyoshi-VROSA">
+        <img src="/vectors/ROSA.svg" class="Horiyoshi-VI" alt="">
+      </section>
+
+    </a>
+  </article>
+
+  {% else %}
+  <!-- Yeah, not perfect -->
+  <article class="Horiyoshi-III  Horiyoshi-III--postView  Horiyoshi-III--empty">
+    <h5 class="Horiyoshi-horimono">&laquo; No more older posts</h5>
+  </article>
+  {% endif %}
+
+  {% if page.next.url %}
+  <article class="Horiyoshi-III  Horiyoshi-III--postView">
+
+    <h5 class="Horiyoshi-horimono">Newer post &raquo;</h5>
+
+    <time class="Horiyoshi-irezumi" datetime="{{ page.next.date | date: "%F" }}">{{ page.next.date | date: "%b %-d" }}</time>
+
+    <a href="{{ page.next.url }}/#main" class="Horiyoshi-IV" {% if page.next.exhibitBackground %} style="background-color: {{ page.next.exhibitBackground }}" {% endif %}>
+
+      {% if page.next.fossilOne %}
+      <section class="Horiyoshi-V"{% if page.next.exhibitBackground == "#000" %} style="border-color: grey"{% endif %}>
+        <img src="{{ page.next.fossilOne }}" class="Horiyoshi-VI" alt="{{ page.next.title }}'s website screenshot">
+      </section>
+      {% endif %}
+
+      {% if page.next.fossilTwo %}
+      <section class="Horiyoshi-V"{% if page.next.exhibitBackground == "#000" %} style="border-color: grey"{% endif %}>
+        <img src="{{ page.next.fossilTwo }}" class="Horiyoshi-VI" alt="{{ page.next.title }}'s website screenshot">
+      </section>
+      {% endif %}
+
+      {% if page.next.fossilThree %}
+      <section class="Horiyoshi-V"{% if page.next.exhibitBackground == "#000" %} style="border-color: grey"{% endif %}>
+        <img src="{{ page.next.fossilThree }}" class="Horiyoshi-VI" alt="{{ page.next.title }}'s website screenshot">
+      </section>
+      {% endif %}
+
+      <section class="Horiyoshi-V  Horiyoshi-VROSA">
+        <img src="/vectors/ROSA.svg" class="Horiyoshi-VI" alt="">
+      </section>
+
+    </a>
+  </article>
+  {% else %}
+  <!-- Not ideal, works for now -->
+  <article class="Horiyoshi-III  Horiyoshi-III--postView  Horiyoshi-III--empty">
+    <h5 class="Horiyoshi-horimono">No more newer posts &raquo;</h5>
+  </article>
+  {% endif %}
+
+</section>

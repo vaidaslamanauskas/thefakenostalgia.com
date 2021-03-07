@@ -1,0 +1,10 @@
+.lazy-load, .lazy-loaded {
+  transform: translateY(2.5%);
+  transition: all .25s ease;
+  opacity: 0;
+}
+
+.lazy-loaded {
+  transform: none;
+  opacity: 1;
+}
